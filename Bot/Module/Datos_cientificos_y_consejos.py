@@ -1,5 +1,5 @@
 from serpapi import GoogleSearch
-def resiclabe(Dato_cientifico, cantidad_de_enlaces = 3):  # sourcery skip: use-named-expression
+def Datos_Cientificos(Dato_cientifico, cantidad_de_enlaces):  # sourcery skip: use-named-expression
     params = {
         "q": f"Datos Cientificos de la{Dato_cientifico}",  # Consulta de búsqueda
         "location": "Mexico City, Mexico",  # Ubicación específica
@@ -24,7 +24,7 @@ def resiclabe(Dato_cientifico, cantidad_de_enlaces = 3):  # sourcery skip: use-n
 
 def Consejos(Consejo):  # sourcery skip: use-named-expression
     params = {
-        "q": f"Consejos para reducir{Consejo}",  # Consulta de búsqueda
+        "q": f"Consejos para {Consejo}",  # Consulta de búsqueda
         "location": "Mexico City, Mexico",  # Ubicación específica
         "hl": "es",  # Idioma (en = inglés)
         "gl": "mx",  # Código del país (us = Estados Unidos)
@@ -44,4 +44,3 @@ def Consejos(Consejo):  # sourcery skip: use-named-expression
         if lista and titulo is not None:
             enlaces += f"{titulo} : {lista}\n"
     return enlaces
-print(resiclabe("Concentracion de CO2 en la atmosfera"))

@@ -1,5 +1,5 @@
 from serpapi import GoogleSearch
-def resiclabe(Busqueda, cantidad_de_enlaces = 3):  # sourcery skip: use-named-expression
+def resiclabe(Busqueda, cantidad_de_enlaces):  # sourcery skip: use-named-expression
     params = {
         "q": f"Manualidad reciclable de{Busqueda}",  # Consulta de búsqueda
         "location": "Mexico City, Mexico",  # Ubicación específica
